@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+  <!-- Plugin Information -->
+  <plugin_name>Advanced iCal Import</plugin_name>
+  <plugin_description>Advanced iCal Import plugin for importing calendar events from iCalendar files</plugin_description>
+  
+  <!-- Main Menu Items -->
+  <menu_import>Import Calendar</menu_import>
+  <menu_import_file>Import from File</menu_import_file>
+  <menu_import_url>Import from URL</menu_import_url>
+  <menu_settings>Settings</menu_settings>
+  <menu_help>Help</menu_help>
+  
+  <!-- Dialog Titles -->
+  <dialog_import_title>Import iCalendar File</dialog_import_title>
+  <dialog_settings_title>Advanced iCal Import Settings</dialog_settings_title>
+  <dialog_confirm_title>Confirm Import</dialog_confirm_title>
+  <dialog_error_title>Import Error</dialog_error_title>
+  <dialog_success_title>Import Successful</dialog_success_title>
+  
+  <!-- Buttons -->
+  <button_browse>Browse</button_browse>
+  <button_import>Import</button_import>
+  <button_cancel>Cancel</button_cancel>
+  <button_ok>OK</button_ok>
+  <button_close>Close</button_close>
+  <button_yes>Yes</button_yes>
+  <button_no>No</button_no>
+  <button_save>Save</button_save>
+  <button_apply>Apply</button_apply>
+  <button_reset>Reset</button_reset>
+  
+  <!-- File Selection -->
+  <label_select_file>Select iCalendar file:</label_select_file>
+  <label_file_path>File path:</label_file_path>
+  <label_import_url>Calendar URL:</label_import_url>
+  <file_filter_ical>iCalendar Files (*.ics, *.ical)</file_filter_ical>
+  <file_filter_all>All Files (*.*)</file_filter_all>
+  
+  <!-- Import Options -->
+  <label_import_options>Import Options</label_import_options>
+  <option_merge_calendars>Merge with existing calendar</option_merge_calendars>
+  <option_replace_calendars>Replace existing calendar</option_replace_calendars>
+  <option_create_new_calendar>Create new calendar</option_create_new_calendar>
+  <option_import_all_events>Import all events</option_import_all_events>
+  <option_import_future_events>Import future events only</option_import_future_events>
+  <option_import_date_range>Import events in date range</option_import_date_range>
+  <label_start_date>Start date:</label_start_date>
+  <label_end_date>End date:</label_end_date>
+  <option_include_recurring>Include recurring events</option_include_recurring>
+  <option_import_reminders>Import reminders/alarms</option_import_reminders>
+  <option_import_attachments>Import attachments</option_import_attachments>
+  <option_import_categories>Import categories/tags</option_import_categories>
+  
+  <!-- Calendar Selection -->
+  <label_target_calendar>Target calendar:</label_target_calendar>
+  <label_calendar_name>Calendar name:</label_calendar_name>
+  <new_calendar>New Calendar</new_calendar>
+  
+  <!-- Event Details -->
+  <label_events_found>Events found:</label_events_found>
+  <label_events_imported>Events imported:</label_events_imported>
+  <label_events_skipped>Events skipped:</label_events_skipped>
+  <label_event_title>Event title:</label_event_title>
+  <label_event_description>Description:</label_event_description>
+  <label_event_location>Location:</label_event_location>
+  <label_event_start>Start time:</label_event_start>
+  <label_event_end>End time:</label_event_end>
+  <label_event_all_day>All day event</label_event_all_day>
+  
+  <!-- Settings -->
+  <settings_general>General Settings</settings_general>
+  <settings_import>Import Settings</settings_import>
+  <settings_advanced>Advanced Settings</settings_advanced>
+  <label_auto_import>Enable automatic import</label_auto_import>
+  <label_import_interval>Auto-import interval (hours):</label_import_interval>
+  <label_timezone>Default timezone:</label_timezone>
+  <label_encoding>File encoding:</label_encoding>
+  <label_duplicate_handling>Duplicate event handling:</label_duplicate_handling>
+  <option_skip_duplicates>Skip duplicates</option_skip_duplicates>
+  <option_update_duplicates>Update duplicates</option_update_duplicates>
+  <option_import_all_duplicates>Import all duplicates</option_import_all_duplicates>
+  <label_event_color>Default event color:</label_event_color>
+  <label_notification_type>Notification type:</label_notification_type>
+  <option_notification_popup>Popup notification</option_notification_popup>
+  <option_notification_silent>Silent</option_notification_silent>
+  <option_notification_sound>Sound notification</option_notification_sound>
+  
+  <!-- Messages -->
+  <message_select_file>Please select an iCalendar file to import.</message_select_file>
+  <message_invalid_file>Invalid iCalendar file selected.</message_invalid_file>
+  <message_file_not_found>File not found: {0}</message_file_not_found>
+  <message_parsing_error>Error parsing iCalendar file: {0}</message_parsing_error>
+  <message_import_confirm>Import {0} events to "{1}" calendar?</message_import_confirm>
+  <message_import_success>Successfully imported {0} events from {1} file(s).</message_import_success>
+  <message_import_partial>Imported {0} out of {1} events. {2} events were skipped.</message_import_partial>
+  <message_import_failed>Failed to import calendar file. Please check the file format and try again.</message_import_failed>
+  <message_no_events_found>No events found in the selected file.</message_no_events_found>
+  <message_invalid_url>Invalid calendar URL provided.</message_invalid_url>
+  <message_url_connection_error>Failed to connect to calendar URL: {0}</message_url_connection_error>
+  <message_url_download_error>Failed to download calendar from URL.</message_url_download_error>
+  <message_settings_saved>Settings saved successfully.</message_settings_saved>
+  <message_settings_error>Error saving settings.</message_settings_error>
+  <message_operation_cancelled>Operation cancelled by user.</message_operation_cancelled>
+  <message_processing>Processing calendar file...</message_processing>
+  <message_importing>Importing events...</message_importing>
+  <message_please_wait>Please wait...</message_please_wait>
+  
+  <!-- Warnings -->
+  <warning_overwrite>This will overwrite the existing calendar. Continue?</warning_overwrite>
+  <warning_large_file>This file contains a large number of events ({0}). This may take some time to import.</warning_large_file>
+  <warning_invalid_events>Some events in the file are invalid and will be skipped.</warning_invalid_events>
+  <warning_timezone_mismatch>Timezone mismatch detected. Events may be displayed in wrong time.</warning_timezone_mismatch>
+  
+  <!-- Status Messages -->
+  <status_ready>Ready</status_ready>
+  <status_importing>Importing...</status_importing>
+  <status_completed>Import completed</status_completed>
+  <status_error>Import failed</status_error>
+  <status_validating>Validating file...</status_validating>
+  <status_parsing>Parsing events...</status_parsing>
+  <status_creating>Creating calendar entries...</status_creating>
+  
+  <!-- Help Text -->
+  <help_title>Advanced iCal Import Help</help_title>
+  <help_introduction>Advanced iCal Import allows you to import calendar events from iCalendar (.ics) files and URLs into your calendar application.</help_introduction>
+  <help_getting_started>Getting Started</help_getting_started>
+  <help_step1>1. Click "Import from File" to import from a local iCalendar file, or "Import from URL" to import from a web URL.</help_step1>
+  <help_step2>2. Select your import options (merge, replace, or create new calendar).</help_step2>
+  <help_step3>3. Configure any additional settings (date range, reminders, etc.).</help_step3>
+  <help_step4>4. Review the preview of events to be imported.</help_step4>
+  <help_step5>5. Click "Import" to complete the import process.</help_step5>
+  <help_file_format>Supported File Formats</help_file_format>
+  <help_format_ics>iCalendar (.ics) files compatible with RFC 5545 standard</help_format_ics>
+  <help_troubleshooting>Troubleshooting</help_troubleshooting>
+  <help_trouble_invalid_file>Invalid File Format: Ensure your .ics file is properly formatted according to iCalendar standards.</help_trouble_invalid_file>
+  <help_trouble_no_events>No Events Imported: Check if the file contains valid events and you have the correct import options selected.</help_trouble_no_events>
+  <help_trouble_timezone>Timezone Issues: Verify that the timezone in the file matches your system timezone.</help_trouble_timezone>
+  <help_trouble_url>URL Import Fails: Check your internet connection and verify the URL is accessible.</help_trouble_url>
+  
+  <!-- Tooltips -->
+  <tooltip_import_file>Import events from a local iCalendar file</tooltip_import_file>
+  <tooltip_import_url>Import events from a web calendar URL</tooltip_import_url>
+  <tooltip_merge_calendars>Merge imported events with existing calendar events</tooltip_merge_calendars>
+  <tooltip_replace_calendars>Replace entire calendar with imported events</tooltip_replace_calendars>
+  <tooltip_create_new>Create a new calendar for imported events</tooltip_create_new>
+  <tooltip_recurring_events>Include recurring and repeating events in the import</tooltip_recurring_events>
+  <tooltip_reminders>Include event reminders and alarms from the iCalendar file</tooltip_reminders>
+  <tooltip_auto_import>Automatically import calendar updates at specified intervals</tooltip_auto_import>
+  
+  <!-- Event Properties -->
+  <prop_summary>Summary</prop_summary>
+  <prop_description>Description</prop_description>
+  <prop_location>Location</prop_location>
+  <prop_organizer>Organizer</prop_organizer>
+  <prop_attendees>Attendees</prop_attendees>
+  <prop_status>Status</prop_status>
+  <prop_priority>Priority</prop_priority>
+  <prop_category>Category</prop_category>
+  <prop_comment>Comment</prop_comment>
+  <prop_created>Created</prop_created>
+  <prop_modified>Modified</prop_modified>
+  <prop_transparency>Show as</prop_transparency>
+  <prop_availability>Availability</prop_availability>
+  
+  <!-- Error Codes -->
+  <error_code_001>File not found or access denied</error_code_001>
+  <error_code_002>Invalid iCalendar file format</error_code_002>
+  <error_code_003>Unsupported file encoding</error_code_003>
+  <error_code_004>Network connection error</error_code_004>
+  <error_code_005>Invalid URL format</error_code_005>
+  <error_code_006>Calendar server error</error_code_006>
+  <error_code_007>Import operation cancelled</error_code_007>
+  <error_code_008>Insufficient disk space</error_code_008>
+  <error_code_009>Permission denied</error_code_009>
+  <error_code_010>Unknown error occurred</error_code_010>
+  
+  <!-- Validation Messages -->
+  <validation_required_field>This field is required</validation_required_field>
+  <validation_invalid_date>Invalid date format</validation_invalid_date>
+  <validation_invalid_time>Invalid time format</validation_invalid_time>
+  <validation_start_after_end>Start date cannot be after end date</validation_start_after_end>
+  <validation_invalid_url>Invalid URL format</validation_invalid_url>
+  <validation_file_too_large>File size exceeds maximum limit</validation_file_too_large>
+  
+  <!-- Preferences -->
+  <pref_show_preview>Show event preview before import</pref_show_preview>
+  <pref_auto_detect_encoding>Auto-detect file encoding</pref_auto_detect_encoding>
+  <pref_create_backup>Create backup before import</pref_create_backup>
+  <pref_log_import_activity>Log import activity</pref_log_import_activity>
+  <pref_check_updates>Check for plugin updates</pref_check_updates>
+  
+  <!-- About Dialog -->
+  <about_version>Version</about_version>
+  <about_author>Author</about_author>
+  <about_copyright>Copyright</about_copyright>
+  <about_website>Website</about_website>
+  <about_license>License</about_license>
+  <about_credits>Credits</about_credits>
+</language>
