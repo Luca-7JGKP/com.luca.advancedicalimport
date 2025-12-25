@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <!-- Plugin Information -->
+    <string name="plugin_name">Advanced iCal Import</string>
+    <string name="plugin_description">Ein erweitertes Modul zum Importieren und Verwenden von iCalendar-Dateien mit erweiterten Funktionen</string>
+    
+    <!-- Menu Items -->
+    <string name="menu_import">Importieren</string>
+    <string name="menu_export">Exportieren</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="menu_help">Hilfe</string>
+    
+    <!-- Buttons -->
+    <string name="btn_browse">Durchsuchen</string>
+    <string name="btn_import">Importieren</string>
+    <string name="btn_export">Exportieren</string>
+    <string name="btn_cancel">Abbrechen</string>
+    <string name="btn_save">Speichern</string>
+    <string name="btn_close">Schließen</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_reset">Zurücksetzen</string>
+    <string name="btn_delete">Löschen</string>
+    <string name="btn_edit">Bearbeiten</string>
+    
+    <!-- Labels -->
+    <string name="label_file_path">Dateipfad</string>
+    <string name="label_import_options">Importoptionen</string>
+    <string name="label_export_options">Exportoptionen</string>
+    <string name="label_calendar_name">Kalender Name</string>
+    <string name="label_calendar_description">Kalender Beschreibung</string>
+    <string name="label_event_count">Anzahl der Ereignisse</string>
+    <string name="label_import_mode">Importmodus</string>
+    <string name="label_merge_strategy">Zusammenführungsstrategie</string>
+    <string name="label_timezone">Zeitzone</string>
+    <string name="label_encoding">Kodierung</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_import_title">iCalendar Datei importieren</string>
+    <string name="dialog_export_title">iCalendar Datei exportieren</string>
+    <string name="dialog_settings_title">Einstellungen</string>
+    <string name="dialog_confirm_title">Bestätigung erforderlich</string>
+    <string name="dialog_error_title">Fehler</string>
+    <string name="dialog_success_title">Erfolgreich</string>
+    <string name="dialog_warning_title">Warnung</string>
+    <string name="dialog_info_title">Information</string>
+    
+    <!-- Messages -->
+    <string name="msg_import_success">Kalender erfolgreich importiert!</string>
+    <string name="msg_import_failed">Fehler beim Importieren des Kalenders</string>
+    <string name="msg_export_success">Kalender erfolgreich exportiert!</string>
+    <string name="msg_export_failed">Fehler beim Exportieren des Kalenders</string>
+    <string name="msg_file_not_found">Datei nicht gefunden</string>
+    <string name="msg_invalid_file">Ungültige iCalendar-Datei</string>
+    <string name="msg_confirm_overwrite">Möchten Sie die vorhandene Datei überschreiben?</string>
+    <string name="msg_confirm_delete">Möchten Sie diesen Kalender wirklich löschen?</string>
+    <string name="msg_no_events">Keine Ereignisse zum Importieren gefunden</string>
+    <string name="msg_parsing_error">Fehler beim Analysieren der iCalendar-Datei</string>
+    <string name="msg_operation_in_progress">Operation wird ausgeführt, bitte warten...</string>
+    
+    <!-- Import Options -->
+    <string name="import_merge">Zusammenführen mit vorhandenem Kalender</string>
+    <string name="import_replace">Vorhandenen Kalender ersetzen</string>
+    <string name="import_create_new">Neuen Kalender erstellen</string>
+    <string name="import_skip_duplicates">Duplikate überspringen</string>
+    <string name="import_update_existing">Vorhandene Ereignisse aktualisieren</string>
+    <string name="import_ignore_errors">Fehler ignorieren und fortfahren</string>
+    
+    <!-- Export Options -->
+    <string name="export_all_events">Alle Ereignisse exportieren</string>
+    <string name="export_selected_calendar">Nur ausgewählten Kalender exportieren</string>
+    <string name="export_date_range">Exportieren nach Datumsbereich</string>
+    <string name="export_format">Exportformat</string>
+    <string name="export_include_alarms">Alarme einschließen</string>
+    <string name="export_include_attendees">Teilnehmer einschließen</string>
+    
+    <!-- Settings -->
+    <string name="setting_default_timezone">Standard-Zeitzone</string>
+    <string name="setting_default_encoding">Standard-Kodierung</string>
+    <string name="setting_auto_import">Automatischer Import bei Start</string>
+    <string name="setting_backup_on_import">Sicherung vor dem Import</string>
+    <string name="setting_show_import_summary">Zusammenfassung nach Import anzeigen</string>
+    <string name="setting_validation_level">Validierungsstufe</string>
+    <string name="setting_log_import_activity">Importaktivität protokollieren</string>
+    
+    <!-- Merge Strategies -->
+    <string name="merge_keep_both">Beide Versionen behalten</string>
+    <string name="merge_keep_newer">Neuere Version behalten</string>
+    <string name="merge_keep_older">Ältere Version behalten</string>
+    <string name="merge_manual_select">Manuell auswählen</string>
+    
+    <!-- Event Details -->
+    <string name="event_title">Titel</string>
+    <string name="event_description">Beschreibung</string>
+    <string name="event_start_date">Startdatum</string>
+    <string name="event_end_date">Enddatum</string>
+    <string name="event_start_time">Startzeit</string>
+    <string name="event_end_time">Endzeit</string>
+    <string name="event_location">Ort</string>
+    <string name="event_organizer">Organisator</string>
+    <string name="event_attendees">Teilnehmer</string>
+    <string name="event_category">Kategorie</string>
+    <string name="event_status">Status</string>
+    <string name="event_recurrence">Wiederholung</string>
+    <string name="event_alarm">Alarm</string>
+    <string name="event_notes">Notizen</string>
+    
+    <!-- Event Status -->
+    <string name="status_confirmed">Bestätigt</string>
+    <string name="status_tentative">Provisorisch</string>
+    <string name="status_cancelled">Abgesagt</string>
+    
+    <!-- Validation Messages -->
+    <string name="validation_missing_required_field">Erforderliches Feld fehlt: {field}</string>
+    <string name="validation_invalid_date_format">Ungültiges Datumsformat</string>
+    <string name="validation_invalid_time_format">Ungültiges Zeitformat</string>
+    <string name="validation_invalid_timezone">Ungültige Zeitzone</string>
+    <string name="validation_invalid_recurrence">Ungültige Wiederholungserkennung</string>
+    <string name="validation_invalid_email">Ungültige E-Mail-Adresse</string>
+    
+    <!-- File Types -->
+    <string name="filetype_ical">iCalendar Dateien (*.ics)</string>
+    <string name="filetype_all">Alle Dateien (*.*)</string>
+    
+    <!-- Status Bar -->
+    <string name="status_ready">Bereit</string>
+    <string name="status_importing">Importieren...</string>
+    <string name="status_exporting">Exportieren...</string>
+    <string name="status_validating">Validierung läuft...</string>
+    <string name="status_completed">Abgeschlossen</string>
+    
+    <!-- Progress Indicators -->
+    <string name="progress_processing_events">Ereignisse werden verarbeitet: {current} von {total}</string>
+    <string name="progress_validating_file">Datei wird validiert...</string>
+    <string name="progress_reading_file">Datei wird gelesen...</string>
+    <string name="progress_writing_file">Datei wird geschrieben...</string>
+    
+    <!-- Help & Documentation -->
+    <string name="help_import_guide">Anleitung zum Importieren von iCalendar-Dateien</string>
+    <string name="help_export_guide">Anleitung zum Exportieren von Kalendern</string>
+    <string name="help_faq">Häufig gestellte Fragen</string>
+    <string name="help_about">Über Advanced iCal Import</string>
+    <string name="help_version">Version</string>
+    <string name="help_author">Autor</string>
+    <string name="help_license">Lizenz</string>
+    
+    <!-- Keyboard Shortcuts -->
+    <string name="shortcut_import">Ctrl+I</string>
+    <string name="shortcut_export">Ctrl+E</string>
+    <string name="shortcut_settings">Ctrl+,</string>
+    <string name="shortcut_help">F1</string>
+    <string name="shortcut_quit">Ctrl+Q</string>
+    
+    <!-- Tooltips -->
+    <string name="tooltip_import">iCalendar-Datei importieren</string>
+    <string name="tooltip_export">Aktuellen Kalender exportieren</string>
+    <string name="tooltip_settings">Plugin-Einstellungen öffnen</string>
+    <string name="tooltip_refresh">Kalender aktualisieren</string>
+    <string name="tooltip_help">Hilfe anzeigen</string>
+    
+    <!-- Error Codes -->
+    <string name="error_code_001">Datei konnte nicht geöffnet werden</string>
+    <string name="error_code_002">Ungültiges iCalendar-Format</string>
+    <string name="error_code_003">Speicherplatz unzureichend</string>
+    <string name="error_code_004">Zugriff verweigert</string>
+    <string name="error_code_005">Zeitstempel ungültig</string>
+    <string name="error_code_006">Zeitzone nicht erkannt</string>
+    <string name="error_code_007">Datei ist beschädigt</string>
+    
+    <!-- Calendar Properties -->
+    <string name="prop_calendar_id">Kalender-ID</string>
+    <string name="prop_calendar_version">Version</string>
+    <string name="prop_calendar_prodid">Produkt-ID</string>
+    <string name="prop_calendar_method">Methode</string>
+    <string name="prop_calendar_created">Erstellt</string>
+    <string name="prop_calendar_modified">Zuletzt geändert</string>
+    <string name="prop_calendar_color">Farbe</string>
+    
+    <!-- Recurrence Patterns -->
+    <string name="recurrence_daily">Täglich</string>
+    <string name="recurrence_weekly">Wöchentlich</string>
+    <string name="recurrence_biweekly">Alle zwei Wochen</string>
+    <string name="recurrence_monthly">Monatlich</string>
+    <string name="recurrence_yearly">Jährlich</string>
+    <string name="recurrence_custom">Benutzerdefiniert</string>
+    <string name="recurrence_never">Keine Wiederholung</string>
+    
+    <!-- Days of Week -->
+    <string name="day_monday">Montag</string>
+    <string name="day_tuesday">Dienstag</string>
+    <string name="day_wednesday">Mittwoch</string>
+    <string name="day_thursday">Donnerstag</string>
+    <string name="day_friday">Freitag</string>
+    <string name="day_saturday">Samstag</string>
+    <string name="day_sunday">Sonntag</string>
+    
+    <!-- Months -->
+    <string name="month_january">Januar</string>
+    <string name="month_february">Februar</string>
+    <string name="month_march">März</string>
+    <string name="month_april">April</string>
+    <string name="month_may">Mai</string>
+    <string name="month_june">Juni</string>
+    <string name="month_july">Juli</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">Oktober</string>
+    <string name="month_november">November</string>
+    <string name="month_december">Dezember</string>
+</language>
