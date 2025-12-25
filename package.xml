@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.luca.advancedicalimport" xmlns="http://www.woltlab.com/package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/package http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename language="en">Advanced iCal Import Settings</packagename>
+		<packagedescription language="en">An advanced plugin for importing and managing iCalendar (iCal) data with enhanced settings and configuration options.</packagedescription>
+		<version>1.0.0</version>
+		<date>2025-12-25</date>
+		<author language="en">Luca</author>
+		<authorurl>https://github.com/Luca-7JGKP</authorurl>
+		<plugin>com.luca</plugin>
+	</packageinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="5.4.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<compatibility>
+		<api version="2021-07-01" />
+	</compatibility>
+
+	<instruction type="template">
+		<templates languagecode="en">
+			<instruction file="template/advancedIcalImportSettings.tpl" />
+		</templates>
+	</instruction>
+
+	<instruction type="language">
+		<languages languagecode="en">
+			<language messagecategoryname="wcf.acp">
+				<item name="wcf.acp.menu.link.advancedicalimport">Advanced iCal Import</item>
+				<item name="wcf.acp.advancedicalimport.title">Advanced iCal Import Settings</item>
+				<item name="wcf.acp.advancedicalimport.description">Configure advanced settings for iCalendar import functionality</item>
+			</language>
+		</languages>
+	</instruction>
+
+	<instruction type="system">
+		<systemsettings>
+			<setting name="advancedicalimport_enabled" category="advancedicalimport">
+				<categoryname language="en">Advanced iCal Import</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<searchable>0</searchable>
+				<description language="en">Enable or disable Advanced iCal Import functionality</description>
+			</setting>
+			<setting name="advancedicalimport_max_file_size" category="advancedicalimport">
+				<optiontype>int</optiontype>
+				<defaultvalue>10485760</defaultvalue>
+				<searchable>0</searchable>
+				<description language="en">Maximum file size for iCal imports in bytes (default: 10MB)</description>
+			</setting>
+			<setting name="advancedicalimport_allow_duplicate_events" category="advancedicalimport">
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<searchable>0</searchable>
+				<description language="en">Allow importing duplicate events</description>
+			</setting>
+		</systemsettings>
+	</instruction>
+
+	<instruction type="file">
+		<files languagecode="en">
+			<instruction file="files/lib/acp/form/AdvancedIcalImportSettingsForm.class.php" />
+			<instruction file="files/lib/system/AdvancedIcalImporter.class.php" />
+		</files>
+	</instruction>
+</package>
